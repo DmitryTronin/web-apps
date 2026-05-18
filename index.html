@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-panel" aria-label="Word search game">
+        <div class="top-bar">
+          <div>
+            <h1>Word Search</h1>
+            <p class="status" id="status">Find every hidden word.</p>
+          </div>
+          <button class="new-game" id="newGameButton" type="button">New Grid</button>
+        </div>
+
+        <div class="game-layout">
+          <div class="board-wrap">
+            <div class="board" id="board" aria-label="Letter grid"></div>
+          </div>
+
+          <aside class="word-panel" aria-label="Hidden words">
+            <div class="panel-heading">
+              <span>Words</span>
+              <span id="score">0 / 0</span>
+            </div>
+            <ul class="word-list" id="wordList"></ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
